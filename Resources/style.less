@@ -5,6 +5,7 @@
 @NorwesterStack: "Norwester", "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @OpenSansStack: "Open Sans", sans-serif;
 @MavenProLightStack: "MavenProLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@PuristaStack: "purista-web",sans-serif;
 
 @headerBorder: 1px solid rgba(38,38,38,1);
 
@@ -14,6 +15,7 @@
 
 html, body {
     height: 100%;
+    -webkit-font-smoothing:antialiased;
 }
 body {
     margin: 0;
@@ -26,9 +28,24 @@ body {
 	height:100%;
 	.align-items(center);
     .justify-content(center);
+    .flex-direction(column);
     .display(flex);
 	display: -webkit-box;
 	display: -webkit-flex;
+	h1 {
+		color:#fff;
+		text-transform: uppercase;
+		font-family: @NorwesterStack;
+		margin:0; 
+		font-size:40px;
+	}
+	span {
+		color:#fff;
+		text-transform: uppercase;
+		font-family:@PuristaStack;
+		margin:0; 
+		visibility:hidden;
+	}
 }
 .container {
 	height:50%;

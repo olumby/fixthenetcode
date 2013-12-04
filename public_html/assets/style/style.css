@@ -2,6 +2,7 @@
 html,
 body {
   height: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 body {
   margin: 0;
@@ -20,10 +21,31 @@ body {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   display: -ms-flexbox;
   display: flex;
   display: -webkit-box;
   display: -webkit-flex;
+}
+.page-container h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Norwester", "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-size: 40px;
+}
+.page-container span {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "purista-web", sans-serif;
+  margin: 0;
+  visibility: hidden;
 }
 .container {
   height: 50%;

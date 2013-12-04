@@ -7,6 +7,7 @@ $( document ).ready(function() {
 				left:(Math.random()*$('.container').width())+"px",
 				top:(Math.random()*$('.container').height())+"px",
 			});
+			$('.clickit').css('visibility', 'visible');
 		},
 		mousedown:function(){
 			$('.bf4-crash').show();
@@ -18,8 +19,8 @@ $( document ).ready(function() {
 			var newEl = $(this).parents('div').clone();
 
 			newEl.css({
-				left:(Math.random()*$('.container').width())+"px",
-				top:(Math.random()*$('.container').height())+"px",
+				left:(Math.random()*$('body').width())+"px",
+				top:(Math.random()*$('body').height())+"px",
 			});
 
 			$('body').append(newEl);
