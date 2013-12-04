@@ -25,6 +25,9 @@
 		})();
 	</script>
 
+
+	<link rel="icon" type="image/png" href="/favicon.png" />
+
 </head>
 
 <body>
@@ -53,13 +56,35 @@
 
 
 	<div class="invisible">
+		<header>
+			<h2>Hello There</h2>
+		</header>
 
-		<h2>Hello User,</h2>
+		<article>
+			<p>Congratulations, you have now fixed the netcode. Stop complaining about it.</p>
+			<p>Share your achievement with your friends.</p>
+		</article>
 
-		<p>So you made it this far. Either that or you're checking the source.</p>
+		<div class="social">
+			<div class="t-share-button">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-text="I fixed the netcode! #BF4" data-size="small">Tweet</a>
+			</div>
+			<div class="fb-share-button" data-href="http://fixthenetcode.com" data-type="button_count"></div>
+		</div>
+		
 
-		<p>This site was set up as a little joke, to make fun of all the players out their blaming everything on 'bad netcode' when in reality they have absolutly no idea what netcode is. If you are one of those players please sew your fingers together or simply turn your interent connection off.</p>
 	</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 
 </body>

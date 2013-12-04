@@ -89,6 +89,53 @@ body {
     }
 }
 
+.invisible {
+	width:560px;
+	height:200px;
+	display:none;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-100px;
+	margin-left:-280px;
+	z-index:9999;
+	background:#000;
+	border:1px solid #ffffff;
+	header {
+		height:31px;
+		border-bottom:1px solid #fff;
+		line-height:30px;
+		padding:0;
+		.background-image(linear-gradient(top, #dbdbdb 0%, #fff 100%));
+		h2 {
+			margin:0;
+			font-size:18px;
+			font-family:@PuristaStack;
+			color:#000;
+			text-align: center;
+			font-weight:600;
+			text-transform:uppercase;
+		}
+	}
+	article {
+		font-family: Arial, sans-serif;
+		font-size:12px;
+		color:#fff;
+		padding:20px;
+		margin:0;
+	}
+	.social {
+		.justify-content(center);
+		.display(flex);
+		display: -webkit-box;
+		display: -webkit-flex;
+
+		.t-share-button, .fb-share-button {
+			margin-top:1px;
+		}
+	}
+}
+
 .bf4-crash {
 	display:none;
 	position:absolute;

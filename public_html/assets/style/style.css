@@ -106,6 +106,61 @@ body {
 .container .button-cont button:focus {
   outline: none;
 }
+.invisible {
+  width: 560px;
+  height: 200px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -280px;
+  z-index: 9999;
+  background: #000;
+  border: 1px solid #ffffff;
+}
+.invisible header {
+  height: 31px;
+  border-bottom: 1px solid #fff;
+  line-height: 30px;
+  padding: 0;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNkYmRiZGIiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
+  background-image: -webkit-linear-gradient(top, #dbdbdb 0%, #ffffff 100%);
+  background-image: -moz-linear-gradient(top, #dbdbdb 0%, #ffffff 100%);
+  background-image: -o-linear-gradient(top, #dbdbdb 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, #dbdbdb 0%, #ffffff 100%);
+}
+.invisible header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-family: "purista-web", sans-serif;
+  color: #000;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.invisible article {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  padding: 20px;
+  margin: 0;
+}
+.invisible .social {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+}
+.invisible .social .t-share-button,
+.invisible .social .fb-share-button {
+  margin-top: 1px;
+}
 .bf4-crash {
   display: none;
   position: absolute;

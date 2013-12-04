@@ -1,6 +1,7 @@
 $( document ).ready(function() {
 
 	var countMe = 0;
+	var countMeSocial = 0;
 
 	$(".button").on({
 		mouseover:function(){
@@ -32,6 +33,12 @@ $( document ).ready(function() {
 
 	$("body").on( "click", ".closeprogram", function() {
 			
+			if(countMeSocial > 9) {
+				$('.invisible').show();
+				_gaq.push(['_trackEvent', 'Social Popup', 'Social', 'Social Popup']);
+			
+			}
+
 			var newEl = $(this).parents('div').clone();
 
 			newEl.css({
@@ -40,6 +47,9 @@ $( document ).ready(function() {
 			});
 
 			$('body').append(newEl);
+
+
+			countMeSocial++;
 	});
 
 });
