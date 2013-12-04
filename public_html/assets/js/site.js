@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-	$("button").on({
+	$(".button").on({
 		mouseover:function(){
 			$(this).css({
 				position:"absolute",
