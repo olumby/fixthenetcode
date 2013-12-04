@@ -1,13 +1,29 @@
 $( document ).ready(function() {
 
+	var countMe = 0;
+
 	$(".button").on({
 		mouseover:function(){
-			$(this).css({
-				position:"absolute",
-				left:(Math.random()*$('.container').width())+"px",
-				top:(Math.random()*$('.container').height())+"px",
-			});
+			if(countMe > 3) {
+				$(this).delay(200).queue( function(next){ 
+					$(this).css({
+						position:"absolute",
+						left:(Math.random()*$('.container').width())+"px",
+						top:(Math.random()*$('.container').height())+"px",
+					});	
+					 $(this).dequeue();
+				});
+
+			} else {
+				$(this).css({
+					position:"absolute",
+					left:(Math.random()*$('.container').width())+"px",
+					top:(Math.random()*$('.container').height())+"px",
+				});	
+			}
+			
 			$('.clickit').css('visibility', 'visible');
+			countMe++;
 		},
 		mousedown:function(){
 			$('.bf4-crash').show();
