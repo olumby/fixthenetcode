@@ -1,0 +1,107 @@
+@import "normalize.css";
+@import "lesshat";
+
+
+@NorwesterStack: "Norwester", "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@OpenSansStack: "Open Sans", sans-serif;
+@MavenProLightStack: "MavenProLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@headerBorder: 1px solid rgba(38,38,38,1);
+
+@blueGlowStack: 0px 0px 6px rgba(92, 188, 238, 0.8),0px 0px 5px rgba(92, 188, 238, 0.9),0px 0px 5px rgba(92, 188, 238, 0.7);
+@blueGlowStackLite: 0px 0px 6px rgba(92, 188, 238, 0.8);
+@redGlowStack:  0px 0px 6px rgba(231, 76, 60, 0.8),0px 0px 5px rgba(231, 76, 60, 0.9),0px 0px 5px rgba(231, 76, 60, 0.7);
+
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background:#000;
+}
+
+
+.page-container {
+	height:100%;
+	.align-items(center);
+    .justify-content(center);
+    .display(flex);
+	display: -webkit-box;
+	display: -webkit-flex;
+}
+.container {
+    height:50%;
+	width:50%;
+
+    .align-items(center);
+    .justify-content(center);
+    .display(flex);
+	display: -webkit-box;
+	display: -webkit-flex;
+
+	position:relative;
+	overflow:visible;
+    .button-cont {
+    	padding:1px;
+
+    	button {
+			background:#000;
+			margin: 0;
+			text-align: center;
+			text-transform: uppercase;
+			height: 40px;
+			line-height: 38px;
+			font-size: 19px;
+			width:300px;
+			padding:0;
+			vertical-align: middle;
+			font-family:@OpenSansStack;
+			font-weight: 400;
+			color: #f90;
+			border: 1px solid #f90;
+			.box-sizing(border-box);
+			.background-image(linear-gradient(top, rgba(7,7,7,0.6) 0%,rgba(7,7,7,0.3) 100%));
+			&:hover {
+				.background-image(linear-gradient(top, rgba(20,20,20,0.6) 0%,rgba(71,71,71,0.8) 100%));
+				text-shadow: 0 0 0.5em rgba(255,194,102,0.8);
+			}
+			&:focus {
+				outline:none;
+			}
+		}
+    }
+}
+
+// Fonts
+
+@font-face {
+    font-family: 'Norwester';
+    src: url('http://battlefieldo.com/assets/themes/battlefieldo/fonts/norwester/norwester.eot?#iefix') format('embedded-opentype'), 
+    url('http://battlefieldo.com/assets/themes/battlefieldo/fonts/norwester/norwester.woff') format('woff'), 
+    url('http://battlefieldo.com/assets/themes/battlefieldo/fonts/norwester/norwester.ttf') format('truetype'), 
+    url('http://battlefieldo.com/assets/themes/battlefieldo/fonts/norwester/norwester.svg#norwester') format('svg');
+}
+
+@font-face {
+    font-family: 'MavenProLight';
+    src: url('http://battlefieldo.com/assets/themes/battlefieldo/fonts/mavenprolight/MavenProLight-100.eot?#iefix') format('embedded-opentype'), 
+    url('http://battlefieldo.com/assets/themes/battlefieldo/fonts/mavenprolight/MavenProLight-100.woff') format('woff'), url('fonts/mavenprolight/MavenProLight-100.ttf') format('truetype'), 
+    url('http://battlefieldo.com/assets/themes/battlefieldo/fonts/mavenprolight/MavenProLight-100.svg#mavenprolight') format('svg');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'MavenProLight';
+    src: url('http://battlefieldo.com/assets/themes/battlefieldo/fonts/mavenprolight/MavenProLight-200.eot?#iefix') format('embedded-opentype'), 
+    url('http://battlefieldo.com/assets/themes/battlefieldo/fonts/mavenprolight/MavenProLight-200.woff') format('woff'), url('fonts/mavenprolight/MavenProLight-200.ttf') format('truetype'), 
+    url('http://battlefieldo.com/assets/themes/battlefieldo/fonts/mavenprolight/MavenProLight-200.svg#mavenprolight') format('svg');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'MavenProLight';
+    src: url('http://battlefieldo.com/assets/themes/battlefieldo/fonts/mavenprolight/MavenProLight-300.eot?#iefix') format('embedded-opentype'), 
+    url('http://battlefieldo.com/assets/themes/battlefieldo/fonts/mavenprolight/MavenProLight-300.woff') format('woff'), url('fonts/mavenprolight/MavenProLight-300.ttf') format('truetype'), 
+    url('http://battlefieldo.com/assets/themes/battlefieldo/fonts/mavenprolight/MavenProLight-300.svg#mavenprolight') format('svg');
+    font-weight: 300;
+}
