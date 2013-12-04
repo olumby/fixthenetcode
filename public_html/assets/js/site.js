@@ -9,8 +9,12 @@ $( document ).ready(function() {
 			});
 		},
 		mousedown:function(){
-			alert("Fuck You");
+			$('.bf4-crash').show();
 		}
 	});
+
+	function bf4Crash() {
+
+	}
 
 });

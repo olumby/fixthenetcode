@@ -6,6 +6,7 @@ body {
 body {
   margin: 0;
   background: #000;
+  font-family: "Calibri", Arial, sans-serif;
 }
 .page-container {
   height: 100%;
@@ -81,6 +82,85 @@ body {
 }
 .container .button-cont button:focus {
   outline: none;
+}
+.bf4-crash {
+  position: absolute;
+  width: 365px;
+  height: 180px;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-border-radius: 7px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 7px;
+  -moz-background-clip: padding;
+  border-radius: 7px;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0px 0px 10px 2px #000000;
+  -moz-box-shadow: 0px 0px 10px 2px #000000;
+  box-shadow: 0px 0px 10px 2px #000000;
+  display: none;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -182px;
+}
+.bf4-crash header {
+  padding: 0 10px;
+}
+.bf4-crash header h2 {
+  margin: 0;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 26px;
+  font-weight: 600;
+  padding: 0px 2px;
+}
+.bf4-crash header .exit {
+  float: right;
+  background: #c7563c;
+  width: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  line-height: 20px;
+  border: 1px solid #4d322d;
+  border-top: 0;
+  -webkit-border-radius: 0px 0px 6px 6px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0px 0px 6px 6px;
+  -moz-background-clip: padding;
+  border-radius: 0px 0px 6px 6px;
+  background-clip: padding-box;
+}
+.bf4-crash article {
+  background: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  top: 26px;
+  border: 1px solid #4e5052;
+  outline: 1px solid #d0d2d5;
+}
+.bf4-crash article h3 {
+  margin: 0;
+  padding: 15px 10px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #005ace;
+}
+.bf4-crash article p {
+  margin: 0;
+  padding: 0 10px;
+  font-size: 13px;
+  color: #000;
+}
+.bf4-crash footer {
+  background: #f0f0f0;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 40px;
 }
 @font-face {
   font-family: 'Norwester';
