@@ -13,8 +13,16 @@ $( document ).ready(function() {
 		}
 	});
 
-	function bf4Crash() {
+	$("body").on( "click", ".closeprogram", function() {
+			
+			var newEl = $(this).parents('div').clone();
 
-	}
+			newEl.css({
+				left:(Math.random()*$('.container').width())+"px",
+				top:(Math.random()*$('.container').height())+"px",
+			});
+
+			$('body').append(newEl);
+	});
 
 });
