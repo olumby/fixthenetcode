@@ -33,7 +33,7 @@ $( document ).ready(function() {
 
 	$("body").on( "click", ".closeprogram", function() {
 			
-			if(countMeSocial > 9) {
+			if(countMeSocial > 6) {
 				$('.invisible').show();
 				_gaq.push(['_trackEvent', 'Social Popup', 'Social', 'Social Popup']);
 			
