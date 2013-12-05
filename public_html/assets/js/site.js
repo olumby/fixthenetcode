@@ -1,7 +1,14 @@
+var sound = new Audio();
+    sound.src = "/error.wav";
+
 $( document ).ready(function() {
 
 	var countMe = 0;
 	var countMeSocial = 0;
+
+
+	
+    
 
 	$(".button").on({
 		mouseover:function(){
@@ -28,11 +35,16 @@ $( document ).ready(function() {
 		},
 		mousedown:function(){
 			$('.bf4-crash').show();
+			sound.play();
 		}
 	});
 
 	$("body").on( "click", ".closeprogram", function() {
 			
+			sound.pause();
+    		sound.currentTime = 0;
+			sound.play();
+
 			if(countMeSocial > 6) {
 				$('.invisible').show();
 				_gaq.push(['_trackEvent', 'Social Popup', 'Social', 'Social Popup']);
